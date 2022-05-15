@@ -5,17 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\Adriana Arake Marumo\\dio-spider-man\\index.html"
+            "name": "Launch Chrome against localhost",
+            "url": "http://127.0.0.1:5500/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
