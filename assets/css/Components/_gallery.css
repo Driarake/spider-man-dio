@@ -1,0 +1,43 @@
+.gallery {
+    padding: 15px;
+    padding-left: 0;
+}
+
+.gallery ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery ul li {
+    margin-left: 25px;
+}
+
+.gallery ul li:first-child {
+    margin-left: 0;
+}
+
+.gallery ul li a img {
+    border: solid 6px white;
+    border-radius: 15px;
+}
+
+.gallery #zoom-in ul {
+    float: left;
+    padding: 15px;
+    padding-left: 0;
+}
+
+#zoom-in ul li a img {
+    border: solid 6px white;
+    border-radius: 15px;
+    max-width: 100%;
+    -moz-transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+#zoom-in:hover ul li a img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

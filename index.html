@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/home-page.css">
-    <script src="/assets/scripts/card-hover-animation.js"></script>
+    <script src="/assets/scripts/script.js"></script>
     <title>SPIDER-MAN | MULTIVERSOS</title>
 </head>
 
@@ -17,44 +17,46 @@
                 <a href="/">Página Inicial</a>
             </li>
             <li class="menu__item">
-                <a href="#">Tobey Maguire</a>
+                <a href="https://pt.wikipedia.org/wiki/Tobey_Maguire">Tobey Maguire</a>
             </li>
             <li class="menu__item menu__icon">
                 <img src="/assets/images/icons/spider.svg" alt="SpiderMultiverso">
             </li>
             <li class="menu__item">
-                <a href="#">Tom Holland</a>
+                <a href="https://pt.wikipedia.org/wiki/Andrew_Garfield">Andrew Garfield</a>
             </li>
             <li class="menu__item">
-                <a href="#">Andrew Garfield</a>
+                <a href="https://pt.wikipedia.org/wiki/Tom_Holland_(ator)">Tom Holland</a>
             </li>
         </ul>
     </nav>
     <div class="container">
-        <a href="#" class="card" id="spider-man-01">
-            <img class="card__background" src="/assets/images/pic-sm-bg-01.jpg">
-            <img class="card__image" src="/assets/images/spider-man-01.png" alt="Tobey Maguire">
-            <h2 class="card__title">Tobey Maguire</h2>
-        </a>
-        <a href="#" class="card" id="spider-man-02">
-            <img class="card__background" src="/assets/images/pic-sm-bg-02.jpg">
-            <img class="card__image" src="/assets/images/spider-man-02.png" alt="Tom Holland">
-            <h2 class="card__title">Tom Holland</h2>
-        </a>
-        <a href="#" class="card" id="spider-man-03">
-            <img class="card__background" src="/assets/images/pic-sm-bg-03.jpg">
-            <img class="card__image" src="/assets/images/spider-man-03.png" alt="Andrew Garfield">
-            <h2 class="card__title">Andrew Garfield</h2>
-        </a>
+        <div class="cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="/assets/pages/tobey/spiderman1.html" class="card" id="spider-man-01">
+                <img class="card__background" src="/assets/images/pic-sm-bg-01.jpg">
+                <img class="card__image" src="/assets/images/spider-man-01.png" alt="Tobey Maguire">
+                <h2 class="card__title">Tobey Maguire</h2>
+            </a>
+            <a href="/assets/pages/andrew/spiderman1.html" class="card" id="spider-man-02">
+                <img class="card__background" src="/assets/images/pic-sm-bg-03.jpg">
+                <img class="card__image" src="/assets/images/spider-man-03.png" alt="Andrew Garfield">
+                <h2 class="card__title">Andrew Garfield</h2>
+            </a>
+            <a href="/assets/pages/tom/spiderman1.html" class="card" id="spider-man-03">
+                <img class="card__background" src="/assets/images/pic-sm-bg-02.jpg">
+                <img class="card__image" src="/assets/images/spider-man-02.png" alt="Tom Holland">
+                <h2 class="card__title">Tom Holland</h2>
+            </a>
+        </div>
     </div>
-    <div class="controller">
-        <div class="controller__botton">
+    <div class="controller ">
+        <div id="1" onclick="selectCarouselItem(this)" class="controller__button controller__button--active">
             01
         </div>
-        <div class="controller__botton">
+        <div id="2" onclick="selectCarouselItem(this)" class="controller__button controller__button--active">
             02
         </div>
-        <div class="controller__botton">
+        <div id="3" onclick="selectCarouselItem(this)" class="controller__button controller__button--active">
             03
         </div>
         <div class="controller__line"></div>
